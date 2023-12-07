@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.PopupOverlay" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">false</item> <!-- 중요: 다이얼로그를 고정 스타일로 설정 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 뒷 배경을 투명하게 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 다이얼로그 배경을 투명하게 설정 -->
+    </style>
+
+</resources>

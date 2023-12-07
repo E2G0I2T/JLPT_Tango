@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@android:color/white" >
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/tableName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INFOMATION"
+        android:textFontWeight="500"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:textSize="28sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/copyEmailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문의 이메일 주소 복사"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="copyEmailToClipboard"
+        android:background="@color/background"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/writeReviewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="리뷰 작성하기 ❤"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="openGooglePlayForReview"
+        android:background="@color/background"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5314788495028634/3662057221" />
+</LinearLayout>

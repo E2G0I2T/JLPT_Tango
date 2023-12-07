@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JLPT 단어 한 입</string>
+    <string name="known_words_count"> %1$d 개</string>
+    <string name="unknown_words_count"> %1$d 개</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
